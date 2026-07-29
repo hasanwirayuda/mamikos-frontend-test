@@ -3,7 +3,7 @@ import type { Campus } from "~/types/kost";
 export const mockCampuses: Campus[] = [
   {
     id: "campus-1",
-    name: "Universitas Gadjah Mada",
+    name: "UGM",
     city: "Yogyakarta",
     imageUrl:
       "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=300&q=80",
@@ -11,7 +11,7 @@ export const mockCampuses: Campus[] = [
   },
   {
     id: "campus-2",
-    name: "Universitas Indonesia",
+    name: "UI",
     city: "Depok / Jakarta",
     imageUrl:
       "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=300&q=80",
@@ -19,7 +19,7 @@ export const mockCampuses: Campus[] = [
   },
   {
     id: "campus-3",
-    name: "Universitas Airlangga",
+    name: "UNAIR",
     city: "Surabaya",
     imageUrl:
       "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?auto=format&fit=crop&w=300&q=80",
@@ -27,7 +27,7 @@ export const mockCampuses: Campus[] = [
   },
   {
     id: "campus-4",
-    name: "Universitas Brawijaya",
+    name: "UB",
     city: "Malang",
     imageUrl:
       "https://images.unsplash.com/photo-1592280771190-3e2e4d571952?auto=format&fit=crop&w=300&q=80",
@@ -35,7 +35,7 @@ export const mockCampuses: Campus[] = [
   },
   {
     id: "campus-5",
-    name: "Universitas Diponegoro",
+    name: "UNDIP",
     city: "Semarang",
     imageUrl:
       "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=300&q=80",
@@ -43,7 +43,7 @@ export const mockCampuses: Campus[] = [
   },
   {
     id: "campus-6",
-    name: "BINUS University",
+    name: "BINUSy",
     city: "Jakarta",
     imageUrl:
       "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=300&q=80",
@@ -51,7 +51,7 @@ export const mockCampuses: Campus[] = [
   },
   {
     id: "campus-7",
-    name: "Universitas Padjadjaran",
+    name: "UNPAD",
     city: "Bandung / Jatinangor",
     imageUrl:
       "https://images.unsplash.com/photo-1519452635265-7b1fbfd1e4e0?auto=format&fit=crop&w=300&q=80",

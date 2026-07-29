@@ -1,5 +1,5 @@
 <template>
-  <section class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
+  <section class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-14">
     <h2 class="text-headline-lg text-secondary mb-4">Kos Sekitar Kampus</h2>
 
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
@@ -7,7 +7,7 @@
         v-for="campus in campuses"
         :key="campus.id"
         href="#"
-        class="flex items-center gap-3 p-3 rounded-md border border-border bg-white hover:border-primary transition-colors"
+        class="flex items-center md:h-24 gap-3 p-3 md:p-6 rounded-md border border-border bg-white hover:border-primary transition-colors"
       >
         <img
           v-if="campus.imageUrl"
@@ -39,7 +39,7 @@
         class="flex items-center justify-center p-3 rounded-md border border-border bg-white hover:border-primary transition-colors"
       >
         <span
-          class="text-body-lg text-secondary font-bold flex items-center gap-1.5"
+          class="text-body-lg text-black font-bold flex items-center gap-1.5"
         >
           Lihat semua
           <ArrowRight class="w-4 h-4" />
