@@ -1,7 +1,7 @@
 <template>
   <section class="relative overflow-hidden bg-white">
     <div
-      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-8 md:pt-14 md:pb-12"
+      class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-8 md:pt-14 md:pb-12"
     >
       <div class="relative z-10 max-w-xl">
         <h1 class="text-headline-display text-secondary mb-2">Mau cari kos?</h1>

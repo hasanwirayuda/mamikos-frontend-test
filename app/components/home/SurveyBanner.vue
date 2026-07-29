@@ -1,5 +1,5 @@
 <template>
-  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+  <section class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-3">
     <div
       class="card-base flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4"
     >

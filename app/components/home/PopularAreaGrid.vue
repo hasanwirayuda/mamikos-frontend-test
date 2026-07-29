@@ -1,5 +1,5 @@
 <template>
-  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+  <section class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
     <h2 class="text-headline-lg text-secondary mb-4">Area Kos Terpopuler</h2>
 
     <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">

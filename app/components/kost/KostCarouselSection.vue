@@ -1,5 +1,5 @@
 <template>
-  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+  <section class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
     <div class="flex items-center justify-between mb-4 gap-3">
       <div class="flex items-center gap-2 flex-wrap">
         <h2 class="text-headline-lg text-secondary">{{ title }}</h2>
