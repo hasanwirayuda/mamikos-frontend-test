@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,21 +6,21 @@
 
 @layer base {
   :root {
-    --color-primary: #1BAA56;
-    --color-primary-hover: #15954B;
+    --color-primary: #1baa56;
+    --color-primary-hover: #15954b;
     --color-secondary: #484848;
-    --color-tertiary: #8F8F8F;
-    --color-surface: #FFFFFF;
-    --color-border: #E8E8E8;
-    --color-error: #D64545;
+    --color-tertiary: #8f8f8f;
+    --color-surface: #ffffff;
+    --color-border: #e8e8e8;
+    --color-error: #d64545;
     --color-shadow: rgba(0, 0, 0, 0.08);
   }
 
   html {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     letter-spacing: 0;
     color: var(--color-secondary);
-    background-color: #FAFAFA;
+    background-color: #fafafa;
     -webkit-font-smoothing: antialiased;
   }
 
@@ -46,7 +46,7 @@
   .text-headline-md {
     font-size: 20px;
     line-height: 24px;
-    font-weight: 600;
+    font-weight: 500;
   }
 
   .text-headline-sm {
@@ -100,7 +100,7 @@
   /* Component spec classes per DESIGN.md */
   .btn-primary {
     background-color: var(--color-primary);
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 16px;
     line-height: 24px;
     font-weight: 700;
@@ -175,7 +175,7 @@
   }
 
   .chip-base {
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
     border-radius: 9999px;
     padding: 8px 12px;
     font-size: 14px;

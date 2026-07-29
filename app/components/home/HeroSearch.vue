@@ -3,17 +3,23 @@
     <div
       class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-8 md:pt-14 md:pb-12"
     >
-      <div class="relative z-10 max-w-xl">
-        <h1 class="text-headline-display text-secondary mb-2">Mau cari kos?</h1>
-        <p class="text-body-md text-tertiary mb-6">
+      <div class="relative z-10 max-w-xl mx-auto xl:w-fit xl:mx-0">
+        <h1
+          class="text-headline-display text-secondary mb-2 text-center xl:text-left"
+        >
+          Mau cari kos?
+        </h1>
+        <p
+          class="text-headline-md text-secondary mb-6 text-center xl:text-left"
+        >
           Dapatkan infonya dan langsung sewa di Mamikos.
         </p>
 
         <form
-          class="flex flex-col sm:flex-row gap-3"
+          class="flex flex-row gap-3 items-center border bg-white shadow-md rounded-md pr-1"
           @submit.prevent="handleSearch"
         >
-          <div class="relative flex-1">
+          <div class="relative flex-1 rounded-md">
             <Search
               class="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-tertiary pointer-events-none"
             />
@@ -21,10 +27,14 @@
               v-model="query"
               type="text"
               placeholder="Masukkan nama lokasi/area/alamat"
-              class="input-base w-full pl-11"
+              class="input-base w-full pl-11 border-none rounded-md truncate text-secondary font-bold"
             />
           </div>
-          <BaseButton type="submit" variant="primary" class="sm:w-auto w-full">
+          <BaseButton
+            type="submit"
+            variant="primary"
+            class="sm:w-auto md:px-8 font-bold"
+          >
             Cari
           </BaseButton>
         </form>
