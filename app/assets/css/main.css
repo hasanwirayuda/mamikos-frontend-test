@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: #1BAA56;
+    --color-primary-hover: #15954B;
+    --color-secondary: #484848;
+    --color-tertiary: #8F8F8F;
+    --color-surface: #FFFFFF;
+    --color-border: #E8E8E8;
+    --color-error: #D64545;
+    --color-shadow: rgba(0, 0, 0, 0.08);
+  }
+
+  html {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0;
+    color: var(--color-secondary);
+    background-color: #FAFAFA;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  * {
+    letter-spacing: 0 !important;
+  }
+}
+
+@layer components {
+  /* Typography classes per DESIGN.md */
+  .text-headline-display {
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 900;
+  }
+
+  .text-headline-lg {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+  }
+
+  .text-headline-md {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+
+  .text-headline-sm {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+  }
+
+  .text-body-lg {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+
+  .text-body-md {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  .text-body-sm {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+
+  .text-label-lg {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+  .text-label-md {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+  }
+
+  .text-label-sm {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 700;
+  }
+
+  .text-nav-link {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+
+  /* Component spec classes per DESIGN.md */
+  .btn-primary {
+    background-color: var(--color-primary);
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    border-radius: 4px;
+    padding: 12px 20px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+  }
+
+  .btn-primary:hover {
+    background-color: var(--color-primary-hover);
+  }
+
+  .btn-secondary {
+    background-color: transparent;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    border-radius: 4px;
+    padding: 12px 20px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+  }
+
+  .btn-secondary:hover {
+    background-color: rgba(27, 170, 86, 0.05);
+  }
+
+  .btn-link {
+    background: transparent;
+    color: var(--color-secondary);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .input-base {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    height: 48px;
+    padding: 12px 16px;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color-secondary);
+    outline: none;
+  }
+
+  .input-base::placeholder {
+    color: var(--color-tertiary);
+  }
+
+  .input-base:focus {
+    border-color: var(--color-primary);
+  }
+
+  .card-base {
+    background-color: var(--color-surface);
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 2px 8px var(--color-shadow);
+  }
+
+  .chip-base {
+    background-color: #F5F5F5;
+    border-radius: 9999px;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    color: var(--color-secondary);
+  }
+}
