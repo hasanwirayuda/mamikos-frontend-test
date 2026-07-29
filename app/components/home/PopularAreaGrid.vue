@@ -17,7 +17,9 @@
         />
         <div class="absolute inset-0 bg-black/35" />
         <div class="absolute inset-0 flex items-center justify-center p-2">
-          <span class="text-headline-lg text-white font-bold text-center">
+          <span
+            class="text-body-lg md:text-headline-lg text-white font-bold text-center"
+          >
             Kos {{ city.name }}
           </span>
         </div>
@@ -28,7 +30,7 @@
         class="h-28 sm:h-48 rounded-md border border-border bg-white flex items-center justify-center hover:border-primary transition-colors"
       >
         <span
-          class="text-headline-lg text-black font-bold flex items-center gap-1.5"
+          class="text-body-lg md:text-headline-lg text-black font-bold flex items-center gap-1.5"
         >
           Lihat semua
           <ArrowRight class="w-4 h-4" />

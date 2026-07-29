@@ -5,12 +5,8 @@
         <!-- Brand & Download Block -->
         <div class="space-y-4 md:col-span-1">
           <NuxtLink to="/" class="flex items-center gap-2">
-            <div
-              class="w-8 h-8 rounded-md bg-primary flex items-center justify-center text-white font-black text-lg"
-            >
-              m
-            </div>
-            <span class="text-xl font-black tracking-tight text-primary">
+            <NuxtImg src="/mamikos-logo.jpeg" alt="Mamikos Logo" class="w-10" />
+            <span class="text-2xl font-black tracking-tight text-primary">
               mamikos
             </span>
           </NuxtLink>
@@ -57,8 +53,6 @@
       <div
         class="pt-8 border-t border-gray-100 flex flex-col md:flex-row items-center justify-between gap-4 text-body-sm text-tertiary"
       >
-        <p>© {{ currentYear }} Mamikos Clone. All rights reserved.</p>
-
         <!-- Social Icons via v-for -->
         <div class="flex items-center space-x-4 text-tertiary">
           <a
@@ -71,6 +65,8 @@
             <component :is="social.icon" class="w-5 h-5" />
           </a>
         </div>
+
+        <p>© {{ currentYear }} Mamikos Clone. All rights reserved.</p>
       </div>
     </div>
   </footer>
