@@ -1,4 +1,3 @@
-<!-- app/components/home/PopularAreaGrid.vue -->
 <template>
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
     <h2 class="text-headline-lg text-secondary mb-4">Area Kos Terpopuler</h2>
