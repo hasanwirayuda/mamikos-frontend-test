@@ -1,10 +1,10 @@
 <template>
-  <section class="bg-white border-t border-border">
+  <section class="bg-[#f5f5f5]">
     <div class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-10 text-center">
-      <h2 class="text-headline-lg text-secondary mb-3">
+      <h2 class="text-headline-md text-black mb-5 font-extrabold">
         Mamikos - Aplikasi Anak Kos No. 1 di Indonesia
       </h2>
-      <p class="text-body-md text-tertiary leading-relaxed text-left">
+      <p class="text-body-md text-secondary leading-relaxed text-left">
         Mamikos memanfaatkan teknologi untuk berkembang dari aplikasi cari kos
         menjadi aplikasi yang memudahkan calon anak kos untuk booking properti
         kos dan juga melakukan pembayaran kos. Saat ini kami memiliki lebih dari
@@ -20,7 +20,7 @@
 
       <button
         type="button"
-        class="mt-6 inline-flex items-center gap-1.5 text-body-lg text-secondary font-bold"
+        class="mt-6 inline-flex items-center gap-1.5 text-headline-md text-secondary font-bold"
         @click="isOpen = !isOpen"
       >
         Fitur yang dapat dimanfaatkan di Mamikos
