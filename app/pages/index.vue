@@ -1,54 +1,74 @@
 <template>
   <div class="max-w-4xl mx-auto p-8 space-y-8">
-    <!-- Header Section using typography tokens -->
-    <header class="text-center space-y-2">
-      <h1 class="text-headline-display text-primary">Mamikos Design System Showcase</h1>
-      <p class="text-body-lg text-tertiary">Testing custom utility & component classes from DESIGN.md</p>
+    <header class="space-y-4">
+      <!-- Breadcrumb Component -->
+      <Breadcrumb :items="breadcrumbItems" />
+
+      <h1 class="text-headline-display text-primary">ISSUE-02 Base UI Components</h1>
+      <p class="text-body-lg text-tertiary">Testing BaseButton, BaseChip, BaseBadge, and Breadcrumb</p>
     </header>
 
-    <!-- Cards Section -->
-    <div class="card-base space-y-6">
-      <h2 class="text-headline-lg text-secondary">Typography Tokens</h2>
-      <div class="space-y-3">
-        <p class="text-headline-display">Headline Display (32px / 900)</p>
-        <p class="text-headline-lg">Headline Large (24px / 700)</p>
-        <p class="text-headline-md">Headline Medium (20px / 600)</p>
-        <p class="text-headline-sm">Headline Small (18px / 600)</p>
-        <p class="text-body-lg">Body Large (16px / 600)</p>
-        <p class="text-body-md">Body Medium (16px / 400)</p>
-        <p class="text-body-sm text-tertiary">Body Small (14px / 400)</p>
-      </div>
-    </div>
-
-    <!-- Buttons & Chips Showcase -->
-    <div class="card-base space-y-6">
-      <h2 class="text-headline-lg text-secondary">Buttons & Chips</h2>
-      
+    <!-- BaseButton Showcase -->
+    <section class="card-base space-y-4">
+      <h2 class="text-headline-md text-secondary">1. BaseButton Component</h2>
       <div class="flex flex-wrap items-center gap-4">
-        <button class="btn-primary">Primary Button</button>
-        <button class="btn-secondary">Secondary Button</button>
-        <button class="btn-link">Link Button</button>
+        <BaseButton variant="primary">Primary Button</BaseButton>
+        <BaseButton variant="secondary">Secondary Button</BaseButton>
+        <BaseButton variant="link">Link Button</BaseButton>
+        <BaseButton variant="primary" disabled>Disabled Button</BaseButton>
       </div>
+    </section>
 
-      <div class="flex flex-wrap items-center gap-3 pt-2">
-        <span class="chip-base">All Cities</span>
-        <span class="chip-base">Jakarta</span>
-        <span class="chip-base">Yogyakarta</span>
-        <span class="chip-base">Bandung</span>
+    <!-- BaseChip Showcase -->
+    <section class="card-base space-y-4">
+      <h2 class="text-headline-md text-secondary">2. BaseChip Component</h2>
+      <div class="flex flex-wrap items-center gap-3">
+        <BaseChip 
+          v-for="city in cities" 
+          :key="city.name" 
+          :active="selectedCity === city.name"
+          @click="selectedCity = city.name"
+        >
+          {{ city.name }}
+        </BaseChip>
       </div>
-    </div>
+      <p class="text-body-sm text-tertiary">Selected: <span class="font-bold text-secondary">{{ selectedCity }}</span></p>
+    </section>
 
-    <!-- Form Input Showcase -->
-    <div class="card-base space-y-4">
-      <h2 class="text-headline-lg text-secondary">Inputs & Tailwind Colors</h2>
-      <div class="flex gap-4">
-        <input 
-          type="text" 
-          placeholder="Search location or kost name..." 
-          class="input-base flex-1"
-        />
-        <button class="btn-primary">Search</button>
+    <!-- BaseBadge Showcase -->
+    <section class="card-base space-y-4">
+      <h2 class="text-headline-md text-secondary">3. BaseBadge Component</h2>
+      <div class="flex flex-wrap items-center gap-3">
+        <BaseBadge variant="managed">Dikelola Mamikos</BaseBadge>
+        <BaseBadge variant="discount">Diskon 20%</BaseBadge>
+        <BaseBadge variant="rating">★ 4.8</BaseBadge>
+        <BaseBadge variant="availability">Sisa 2 kamar</BaseBadge>
+        <BaseBadge variant="neutral">Kost Putri</BaseBadge>
       </div>
-    </div>
+    </section>
   </div>
 </template>
+
+<script setup lang="ts">
+import { ref } from 'vue'
+import BaseButton from '~/components/ui/BaseButton.vue'
+import BaseChip from '~/components/ui/BaseChip.vue'
+import BaseBadge from '~/components/ui/BaseBadge.vue'
+import Breadcrumb from '~/components/ui/Breadcrumb.vue'
+
+const breadcrumbItems = [
+  { label: 'Home', to: '/' },
+  { label: 'Kost Jogja', to: '/kost' },
+  { label: 'Kost Apik Monjali', to: '#' }
+]
+
+const cities = [
+  { name: 'Semua Kota' },
+  { name: 'Jakarta' },
+  { name: 'Yogyakarta' },
+  { name: 'Bandung' },
+  { name: 'Surabaya' }
+]
+
+const selectedCity = ref('Semua Kota')
+</script>
