@@ -1,5 +1,16 @@
 <template>
-  <main>
-    <slot />
-  </main>
+  <div
+    class="min-h-screen flex flex-col bg-[#FAFAFA] font-sans antialiased text-secondary"
+  >
+    <AppHeader />
+    <main class="flex-1">
+      <slot />
+    </main>
+    <AppFooter />
+  </div>
 </template>
+
+<script setup lang="ts">
+import AppHeader from "~/components/layout/AppHeader.vue";
+import AppFooter from "~/components/layout/AppFooter.vue";
+</script>
