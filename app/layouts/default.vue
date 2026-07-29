@@ -1,6 +1,6 @@
 <template>
   <div
-    class="min-h-screen flex flex-col bg-[#FAFAFA] font-sans antialiased text-secondary"
+    class="min-h-screen flex flex-col bg-white font-sans antialiased text-secondary"
   >
     <AppHeader />
     <main class="flex-1">

@@ -1,18 +1,18 @@
 <template>
   <section class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-3">
     <div
-      class="card-base flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4"
+      class="card-base flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 rounded-xl shadow-lg"
     >
       <div>
-        <h3 class="text-headline-sm text-secondary mb-1">
+        <h3 class="text-headline-lg font-extrabold text-secondary mb-1">
           Survei Kos Idaman Kamu Sekarang!
         </h3>
-        <p class="text-body-sm text-tertiary">
+        <p class="text-body-lg font-light text-secondary">
           Untungnya ada fitur Survei Kos di Mamikos. Cari, pilih, survei, hingga
           sewa kos idaman dijamin aman dan <br />
           GRATIS.
         </p>
-        <BaseButton variant="link" class="mt-2 underline"
+        <BaseButton variant="link" class="mt-2 underline font-bold"
           >Baca selengkapnya</BaseButton
         >
       </div>
