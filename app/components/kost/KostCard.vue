@@ -51,7 +51,7 @@
       <!-- Facilities row -->
       <div class="flex items-center gap-2 text-tertiary">
         <component
-          :is="icon"
+          :is="icon.component"
           v-for="icon in facilityIcons"
           :key="icon.name"
           class="w-3.5 h-3.5"
@@ -120,9 +120,10 @@ const facilityIconMap: Record<string, unknown> = {
 const MAX_ICONS = 4;
 
 const facilityIcons = computed(() =>
-  props.kost.facilities
-    .slice(0, MAX_ICONS)
-    .map((name) => facilityIconMap[name.toLowerCase()] ?? Check),
+  props.kost.facilities.slice(0, MAX_ICONS).map((name) => ({
+    name,
+    component: facilityIconMap[name.toLowerCase()] ?? Check,
+  })),
 );
 
 const hiddenFacilityCount = computed(() =>
