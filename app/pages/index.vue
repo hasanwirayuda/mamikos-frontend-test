@@ -28,19 +28,35 @@
       city-label="Semua Kota"
       :kosts="onPromoKosts"
     />
+
+    <PopularAreaGrid :cities="mockCities" />
+    <CampusGrid :campuses="mockCampuses" />
+    <AboutSection />
   </div>
 </template>
 
 <script setup lang="ts">
+import AboutSection from "~/components/home/AboutSection.vue";
+import CampusGrid from "~/components/home/CampusGrid.vue";
 import HeroSearch from "~/components/home/HeroSearch.vue";
+import PopularAreaGrid from "~/components/home/PopularAreaGrid.vue";
 import PromoBannerCarousel from "~/components/home/PromoBannerCarousel.vue";
 import SurveyBanner from "~/components/home/SurveyBanner.vue";
 import TrustBanner from "~/components/home/TrustBanner.vue";
+import KostCarouselSection from "~/components/kost/KostCarouselSection.vue";
 
 import { mockKosts } from "~/data/kosts";
-import KostCarouselSection from "~/components/kost/KostCarouselSection.vue";
+import { mockCities } from "~/data/cities";
+import { mockCampuses } from "~/data/campuses";
+import type { Kost } from "~/types/kost";
 
 const promoNgebutKosts = mockKosts.filter((k) => k.isPromoNgebut);
 const recommendedKosts = mockKosts.filter((k) => k.isRecommended);
 const onPromoKosts = mockKosts.filter((k) => k.isOnPromo);
+
+function goToDetail(kost: Kost) {
+  // Routing ke /kost/[slug] baru diimplementasikan di ISSUE-09.
+  // Untuk sekarang hanya log supaya event chain-nya sudah tervalidasi.
+  console.log("Navigate to kost detail:", kost.slug);
+}
 </script>
