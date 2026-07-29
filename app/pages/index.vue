@@ -55,8 +55,10 @@ const recommendedKosts = mockKosts.filter((k) => k.isRecommended);
 const onPromoKosts = mockKosts.filter((k) => k.isOnPromo);
 
 function goToDetail(kost: Kost) {
-  // Routing ke /kost/[slug] baru diimplementasikan di ISSUE-09.
-  // Untuk sekarang hanya log supaya event chain-nya sudah tervalidasi.
   console.log("Navigate to kost detail:", kost.slug);
 }
+
+useHead({
+  title: "Mamikos - Cari, Bayar, & Sewa Kost Impianmu Secara Online",
+});
 </script>
