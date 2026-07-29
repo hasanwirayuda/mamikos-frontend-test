@@ -1,10 +1,10 @@
-# Mamikos Homepage Clone — Frontend Engineer Technical Test
+# Mamikos Clone - Frontend Engineer Technical Test
 
 A frontend clone of the Mamikos homepage, built with an AI-assisted, per-issue workflow. Final submission scope is **homepage only** (the kost detail page was planned as a stretch goal but was intentionally cut to keep the delivered scope polished within the time budget).
 
 - **Live demo:** https://mamikos-frontend-test.vercel.app/
 - **Repository:** https://github.com/hasanwirayuda/mamikos-frontend-test
-- **Screen recording:** [Google Drive link — to be added]
+- **Screen recording:** https://drive.google.com/file/d/1visQks0CX4kxr9cY-LtUJ9xzSYuRyq8z/view?usp=sharing
 
 ## Tech Stack
 
