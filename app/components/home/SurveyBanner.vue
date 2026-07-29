@@ -5,13 +5,16 @@
     >
       <div>
         <h3 class="text-headline-sm text-secondary mb-1">
-          Take the Kost Survey Now!
+          Survei Kos Idaman Kamu Sekarang!
         </h3>
-        <p class="text-body-sm text-tertiary max-w-md">
-          Search, choose, and survey your ideal kost so renting feels safe and
-          guaranteed. It's free.
+        <p class="text-body-sm text-tertiary">
+          Untungnya ada fitur Survei Kos di Mamikos. Cari, pilih, survei, hingga
+          sewa kos idaman dijamin aman dan <br />
+          GRATIS.
         </p>
-        <BaseButton variant="link" class="mt-2 underline">Read more</BaseButton>
+        <BaseButton variant="link" class="mt-2 underline"
+          >Baca selengkapnya</BaseButton
+        >
       </div>
       <div
         class="hidden sm:grid grid-cols-6 gap-1.5 shrink-0"

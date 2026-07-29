@@ -4,11 +4,9 @@
       class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-8 md:pt-14 md:pb-12"
     >
       <div class="relative z-10 max-w-xl">
-        <h1 class="text-headline-display text-secondary mb-2">
-          Looking for a kost?
-        </h1>
+        <h1 class="text-headline-display text-secondary mb-2">Mau cari kos?</h1>
         <p class="text-body-md text-tertiary mb-6">
-          Get the info and rent it directly on Mamikos.
+          Dapatkan infonya dan langsung sewa di Mamikos.
         </p>
 
         <form
@@ -22,12 +20,12 @@
             <input
               v-model="query"
               type="text"
-              placeholder="Enter location/area/address"
+              placeholder="Masukkan nama lokasi/area/alamat"
               class="input-base w-full pl-11"
             />
           </div>
           <BaseButton type="submit" variant="primary" class="sm:w-auto w-full">
-            Search
+            Cari
           </BaseButton>
         </form>
       </div>

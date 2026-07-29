@@ -5,11 +5,11 @@
     >
       <div>
         <h3 class="text-headline-sm text-secondary mb-1">
-          Kost Managed by Mamikos, Guaranteed Comfortable
+          Kos Dikelola Mamikos, Terjamin Nyaman
         </h3>
         <p class="text-body-sm text-tertiary">
-          Directly surveyed by Mamikos. Verified location, buildings that pass
-          selection.
+          Disurvey langsung oleh Mamikos. Lokasi terverifikasi, bangunan kos
+          lolos seleksi.
         </p>
       </div>
       <div class="flex items-center gap-4 shrink-0">
